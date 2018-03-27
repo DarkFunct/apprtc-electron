@@ -19,13 +19,13 @@ function createWindow() {
 
     // 然后加载应用的 index.html。
     //win.loadURL('https://appr.tc/');
-    win.loadURL('https://192.168.2.67:8888/');
+    // win.loadURL('https://192.168.2.67:8888/');
     // win.loadURL('http://192.168.2.67:8080/');
-    // win.loadURL(url.format({
-    //     pathname: path.join(__dirname, 'index.html'),
-    //     protocol: 'file:',
-    //     slashes: true
-    // }))
+    win.loadURL(url.format({
+        pathname: path.join(__dirname, 'index.html'),
+        protocol: 'file:',
+        slashes: true
+    }))
 
     // 打开开发者工具。
     win.webContents.openDevTools()

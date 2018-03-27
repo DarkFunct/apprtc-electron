@@ -1,0 +1,16 @@
+
+{"version_info": "{\"gitHash\": \"20cdd7652d58c9cf47ef92ba0190a5505760dc05\", \"branch\": \"master\", \"time\": \"Fri Mar 9 17:06:42 2018 +0100\"}", 
+"error_messages": [], 
+"ice_server_transports": "", 
+"bypass_join_confirmation": "false", 
+"wss_url": "wss://apprtc-ws.webrtc.org:443/ws", 
+"media_constraints": "{\"audio\": true, \"video\": {\"optional\": [{\"minWidth\": \"1280\"}, {\"minHeight\": \"720\"}], \"mandatory\": {}}}", 
+"include_loopback_js": "", 
+"is_loopback": "false", 
+"offer_options": "{}", 
+"pc_constraints": "{\"optional\": []}", "pc_config": "{\"rtcpMuxPolicy\": \"require\", \"bundlePolicy\": \"max-bundle\", \"iceServers\": []}", 
+"wss_post_url": "https://apprtc-ws.webrtc.org:443", 
+"ice_server_url": "https://networktraversal.googleapis.com/v1alpha/iceconfig?key=AIzaSyAJdh2HkajseEIltlZ3SIXO02Tze9sO3NY", 
+"warning_messages": [], 
+"include_rtstats_js": "<script src=\"/js/rtstats.js\"></script><script src=\"/pako/pako.min.js\"></script>"
+}
