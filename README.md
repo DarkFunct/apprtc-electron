@@ -21,3 +21,12 @@ open appwindow.js,
 //change server address.
 var roomServer = 'https://appr.tc';
 ```
+
+if  your server is self certificate 
+```
+// add this code to main.js
+app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
+      event.preventDefault()
+      callback(true)
+  })
+```
