@@ -45,10 +45,10 @@ function createWindow() {
 app.on('ready', createWindow)
 
 // 这个处理自签证书问题。
-app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
-      event.preventDefault()
-      callback(true)
-  })
+// app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
+//       event.preventDefault()
+//       callback(true)
+//   })
 
 // 当全部窗口关闭时退出。
 app.on('window-all-closed', () => {

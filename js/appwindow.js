@@ -13,8 +13,8 @@
 'use strict';
 
 // Generate random room id and connect.
-// var roomServer = 'https://appr.tc';
-var roomServer = 'https://192.168.2.67:8888';
+var roomServer = 'https://appr.tc';
+// var roomServer = 'https://192.168.2.67:8888';
 var loadingParams = {
   errorMessages: [],
   warningMessages: [],

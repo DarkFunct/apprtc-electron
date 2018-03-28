@@ -113,67 +113,65 @@
 
   </div>
   <div id="privacy">
-    <a href="//www.google.com/accounts/TOS">Terms</a>
+    <a href="https//www.google.com/accounts/TOS">Terms</a>
     &#32;&#124;&#32;
-    <a href="//www.google.com/policies/privacy/">Privacy</a>
+    <a href="https//www.google.com/policies/privacy/">Privacy</a>
     &#32;&#124;&#32;
-    <a href="//github.com/webrtc/apprtc">Code repo</a>
+    <a href="https//github.com/webrtc/apprtc">Code repo</a>
   </div>
 
 
   <script src="./js/apprtc.debug.js"></script>
 
-  <!--
   <script src="./js/appwindow.js"></script>
-  -->
 
   <script type="text/javascript">
-    var roomServerIpPort = '192.168.2.67:8888';
-    var roomServer = 'https://' + roomServerIpPort;
-    var loadingParams = {
-      errorMessages: [],
-      isLoopback:  false ,
-      warningMessages: [],
-      roomServer: roomServer,
+    // var roomServerIpPort = '192.168.2.67:8888';
+    // var roomServer = 'https://' + roomServerIpPort;
+    // var loadingParams = {
+    //   errorMessages: [],
+    //   isLoopback:  false ,
+    //   warningMessages: [],
+    //   roomServer: roomServer,
 
-      mediaConstraints: {"video": {"optional": [{"minWidth": "1280"}, {"minHeight": "720"}], "mandatory": {}}, "audio": true},
-      offerOptions: {},
-      peerConnectionConfig: {"iceServers": [], "rtcpMuxPolicy": "require", "bundlePolicy": "max-bundle"},
-      peerConnectionConstraints: {"optional": []},
-      turnRequestUrl: "https://computeengineondemand.appspot.com/turn?username=939984059&key=4080218913",
-      iceServerRequestUrl: "https://192.168.2.67:8888/iceconfig?key=4080218913",
-      iceServerTransports: "",
-      wssUrl: "wss://" + roomServerIpPort + "/ws",
-      wssPostUrl: roomServer,
-      bypassJoinConfirmation:  false ,
-      turnServerOverride: [],
-      versionInfo: {"time": "Thu Feb 9 15:54:29 2017 +0800", "branch": "master", "gitHash": "9d2692c3a32b1213584ec01cb5f12d462cb82d3e"},
-      callstatsParams: {"appSecret": "none", "appId": "none"}
-    };
+    //   mediaConstraints: {"video": {"optional": [{"minWidth": "1280"}, {"minHeight": "720"}], "mandatory": {}}, "audio": true},
+    //   offerOptions: {},
+    //   peerConnectionConfig: {"iceServers": [], "rtcpMuxPolicy": "require", "bundlePolicy": "max-bundle"},
+    //   peerConnectionConstraints: {"optional": []},
+    //   turnRequestUrl: "https://computeengineondemand.appspot.com/turn?username=939984059&key=4080218913",
+    //   iceServerRequestUrl: "https://" + roomServerIpPort + "/iceconfig?key=4080218913",
+    //   iceServerTransports: "",
+    //   wssUrl: "wss://" + roomServerIpPort + "/ws",
+    //   wssPostUrl: roomServer,
+    //   bypassJoinConfirmation:  false ,
+    //   turnServerOverride: [],
+    //   versionInfo: {"time": "Thu Feb 9 15:54:29 2017 +0800", "branch": "master", "gitHash": "9d2692c3a32b1213584ec01cb5f12d462cb82d3e"},
+    //   callstatsParams: {"appSecret": "none", "appId": "none"}
+    // };
 
-    var appController;
+    // var appController;
 
-    function initialize() {
-      // We don't want to continue if this is triggered from Chrome prerendering,
-      // since it will register the user to GAE without cleaning it up, causing
-      // the real navigation to get a "full room" error. Instead we'll initialize
-      // once the visibility state changes to non-prerender.
-      if (document.visibilityState === 'prerender') {
-        document.addEventListener('visibilitychange', onVisibilityChange);
-        return;
-      }
-      appController = new AppController(loadingParams);
-    }
+    // function initialize() {
+    //   // We don't want to continue if this is triggered from Chrome prerendering,
+    //   // since it will register the user to GAE without cleaning it up, causing
+    //   // the real navigation to get a "full room" error. Instead we'll initialize
+    //   // once the visibility state changes to non-prerender.
+    //   if (document.visibilityState === 'prerender') {
+    //     document.addEventListener('visibilitychange', onVisibilityChange);
+    //     return;
+    //   }
+    //   appController = new AppController(loadingParams);
+    // }
 
-    function onVisibilityChange() {
-      if (document.visibilityState === 'prerender') {
-        return;
-      }
-      document.removeEventListener('visibilitychange', onVisibilityChange);
-      initialize();
-    }
+    // function onVisibilityChange() {
+    //   if (document.visibilityState === 'prerender') {
+    //     return;
+    //   }
+    //   document.removeEventListener('visibilitychange', onVisibilityChange);
+    //   initialize();
+    // }
 
-    initialize();
+    // initialize();
   </script>
 
 </body>
